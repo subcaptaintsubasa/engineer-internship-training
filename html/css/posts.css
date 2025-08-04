@@ -1,10 +1,4 @@
 /* 追加するCSS */
-.header {
-    background-color:  #a123;
-}
-.post-action {
-    background-color:aqua
-}
 
 
 /* 投稿に関するCSS */
@@ -35,7 +29,7 @@
 
 .post-action {
     position: absolute;
-    bottom: 50px;
+    bottom: 0px;
     right: 50px;
 }
 

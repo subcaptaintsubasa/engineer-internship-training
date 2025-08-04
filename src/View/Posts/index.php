@@ -30,7 +30,7 @@
             <form method="POST" action="/Posts/create" class="post-form">
                 <div class="post-form-name">
                     <h4>名前</h4>
-                    <input type="text" id="name" name="name" class="post-form-name-input" placeholder="あなたの名前を入力してください。" maxlength="30" required>
+                    <input type="text" id="name" name="name" class="post-form-name-input" placeholder="あなたの名前を入力してください。" maxlength="30" >
                 </div>
                 <div class="post-form-message">
                     <h4>投稿文</h4>
