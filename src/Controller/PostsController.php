@@ -22,13 +22,26 @@ class PostsController extends AppController
     {
         $pageName = 'HOME / K';
         $this->assign('pageName', $pageName);
-
         $post = new Post();
-        $posts = $post->fetch();
-        $this->assign('posts', $posts);
-        $this->show('Posts/index.php');
+        $allPosts = $post->fetch();
+        $recentPosts = [];
+        $now = new DateTime();
+        foreach ($allPosts as $p) {
+            $postTime = new DateTime($p['updated_at']);
+            $interval = $now->diff($postTime);
+            $hours = $interval->d * 24 + $interval->h;
+            if ($hours < 24) {
+                $recentPosts[] = $p;
+            }
+        }
 
+        $this->assign('posts', $recentPosts);
+        $this->show('Posts/index.php');
         return;
+    
+
+
+
     }
 
     /**
