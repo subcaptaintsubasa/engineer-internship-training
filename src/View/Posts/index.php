@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/css/posts.css">
     <script src="/js/posts.js"></script>
     <title><?= $this->get('pageName') ?></title>
+    <link rel="shortcut　icon" href="/imgs/favicon.ico">
 </head>
 
 <body>
