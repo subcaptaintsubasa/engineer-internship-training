@@ -2,6 +2,9 @@
 .header {
     background-color:  #a123;
 }
+.post-action {
+    background-color:aqua
+}
 
 
 /* 投稿に関するCSS */
@@ -10,7 +13,7 @@
 }
 
 .post-icon {
-    width: 120px;
+    width: 60px;
 }
 
 .post-image {
@@ -32,8 +35,8 @@
 
 .post-action {
     position: absolute;
-    bottom: 0px;
-    right: 0px;
+    bottom: 50px;
+    right: 50px;
 }
 
 /* inputのデフォルトスタイルをリセット */
